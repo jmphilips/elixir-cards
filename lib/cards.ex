@@ -1,5 +1,9 @@
 defmodule Cards do
 
+    @moduledoc """
+      Provides methods for creating and handling methods.
+    """
+
     def create_deck do 
       values = ["Ace", "Two", "Three", "Four", "Five"]
       suits = ["Spades", "Clubs", "Hearts", "Diamonds"]
@@ -38,5 +42,5 @@ defmodule Cards do
       |> shuffle
       |> deal(hand_size)
     end
-    
+
 end
